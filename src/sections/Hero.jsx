@@ -19,26 +19,24 @@ const Hero = () => {
 				<Canvas className="w-full h-full">
 					<Suspense fallback={<CanvasLoader />}>
 						{/* To hide controller */}
-						<Leva hidden />
+						{/* <Leva hidden /> */}
 						<PerspectiveCamera makeDefault position={[0, 0, 30]} />
 
-						<HeroCamera isMobile={isMobile}>
-							<HackerRoom
-								scale={sizes.deskScale}
-								position={sizes.deskPosition}
-								rotation={[0.1, -Math.PI, 0]}
-							/>
-						</HeroCamera>
+						<HackerRoom
+							scale={0.1}
+							position={[0, -12, 2]}
+							rotation={[0.1, -Math.PI, 0]}
+						/>
 
-						<group>
+						{/* <group>
 							<Target position={sizes.targetPosition} />
 							<ReactLogo position={sizes.reactLogoPosition} />
 							<Rings position={sizes.ringPosition} />
 							<Cube position={sizes.cubePosition} />
-						</group>
+						</group> */}
 
 						<ambientLight intensity={1} />
-						<directionalLight position={[10, 10, 10]} intensity={0.5} />
+						<directionalLight position={[10, 10, 10]} intensity={0.9} />
 					</Suspense>
 				</Canvas>
 			</div>
