@@ -120,7 +120,7 @@ const About = () => {
 									src={hasCopied ? "assets/tick.svg" : "assets/copy.svg"}
 									alt="copy"
 								/>
-								<p className="lg:text-2xl md:text-xl font-medium text-gray_gradient text-white">
+								<p className="lg:text-xl md:text-xl font-medium text-gray_gradient text-white">
 									federico.murru87@gmail.com
 								</p>
 							</div>
