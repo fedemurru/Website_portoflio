@@ -25,7 +25,7 @@ const Hero = () => {
 
 	return (
 		<section className="min-h-screen w-full flex flex-col relative" id="home">
-			<div className="w-full mx-auto flex flex-col sm:mt-36 mt-20 c-space gap-3">
+			<div className="w-full mx-auto flex flex-col mt-28 c-space gap-3">
 				<p className="sm:text-3xl text-xl font-medium text-white text-center font-generalsans">
 					Hi, I am Federico <span className="waving-hand">👋</span>
 				</p>
@@ -35,7 +35,7 @@ const Hero = () => {
 			</div>
 
 			<div className="w-full h-full absolute inset-0">
-				<Canvas className="w-full h-full mt-20">
+				<Canvas className="w-full h-full mt-5">
 					<Suspense fallback={<CanvasLoader />}>
 						{/* To hide controller */}
 						<Leva hidden />
@@ -62,7 +62,7 @@ const Hero = () => {
 				</Canvas>
 			</div>
 
-			<div className="absolute bottom-[-35px] left-0 right-0 w-full z-10 c-space">
+			<div className="absolute bottom-[10px] left-0 right-0 w-full z-10 c-space">
 				<a href="#about" className="w-fit ">
 					<Button
 						name="Let's work together"
