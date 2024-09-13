@@ -35,7 +35,7 @@ const Hero = () => {
 			</div>
 
 			<div className="w-full h-full absolute inset-0">
-				<Canvas className="w-full h-full mt-10">
+				<Canvas className="w-full h-full mt-20">
 					<Suspense fallback={<CanvasLoader />}>
 						{/* To hide controller */}
 						<Leva hidden />
@@ -62,7 +62,7 @@ const Hero = () => {
 				</Canvas>
 			</div>
 
-			<div className="absolute bottom-1 left-0 right-0 w-full z-10 c-space">
+			<div className="absolute bottom-[-35px] left-0 right-0 w-full z-10 c-space">
 				<a href="#about" className="w-fit ">
 					<Button
 						name="Let's work together"
