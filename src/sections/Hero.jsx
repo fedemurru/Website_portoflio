@@ -8,6 +8,12 @@ import { Leva } from "leva";
 import { calculateSizes } from "../constants";
 import { useMediaQuery } from "react-responsive";
 
+import Cube from "../components/Cube.jsx";
+import Rings from "../components/Rings.jsx";
+import ReactLogo from "../components/ReactLogo.jsx";
+// import Button from "../components/Button.jsx";
+import Target from "../components/Target.jsx";
+
 const Hero = () => {
 	// Use media queries to determine screen size
 	const isSmall = useMediaQuery({ maxWidth: 440 });
@@ -26,8 +32,8 @@ const Hero = () => {
 					Building Software Products
 				</p>
 			</div>
-			<div className="w-full h-full absolute inset-0">
-				<Leva />
+			<div className="w-full h-full absolute inset-0 my-5">
+				{/* <Leva /> */}
 				<Canvas className="w-full h-full">
 					<Suspense fallback={<CanvasLoader />}>
 						{/* To hide controller */}
@@ -35,16 +41,16 @@ const Hero = () => {
 
 						<HackerRoom
 							scale={0.1}
-							position={[0, -12, 2]}
+							position={[0.5, -12, 2]}
 							rotation={[0.1, -Math.PI, 0]}
 						/>
 
-						{/* <group>
+						<group>
 							<Target position={sizes.targetPosition} />
 							<ReactLogo position={sizes.reactLogoPosition} />
-							<Rings position={sizes.ringPosition} />
+							{/* <Rings position={sizes.ringPosition} /> */}
 							<Cube position={sizes.cubePosition} />
-						</group> */}
+						</group>
 
 						<ambientLight intensity={1} />
 						<directionalLight position={[20, 40, 9]} intensity={0.9} />
