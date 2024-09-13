@@ -11,7 +11,7 @@ const About = () => {
 
 		setTimeout(() => {
 			setHasCopied(false);
-		}, 2000);
+		}, 2500);
 	};
 	return (
 		<section className="c-space my-20" id="about">
@@ -44,8 +44,8 @@ const About = () => {
 						<div>
 							<p className="grid-headtext">Tech Stack</p>
 							<p className="grid-subtext">
-								I specialize in a variety of languages, frameworks, and tools
-								that allow me to build robust and scalable applications
+								I specialise in JavaScript/Typescript with a focus on React,
+								Next.js and Three.js
 							</p>
 						</div>
 					</div>
@@ -61,13 +61,13 @@ const About = () => {
 								backgroundImageOpacity={0.5}
 								showAtmosphere
 								showGraticules
-								globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
+								globeImageUrl="//unpkg.com/three-globe/example/img/earth-day.jpg"
 								bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
 								labelsData={[
 									{
-										lat: 40,
-										lng: -100,
-										text: "Manchester",
+										lat: 53.483959,
+										lng: -2.244644,
+										text: "Hello I'm here",
 										color: "white",
 										size: 15,
 									},
@@ -78,9 +78,8 @@ const About = () => {
 							<p className="grid-headtext">
 								I’m very flexible with time zone communications & locations
 							</p>
-							<p className="grid-subtext">
-								I&apos;m based in Manchester, UK and open to remote work
-								worldwide.
+							<p className="grid-subtext mt-2">
+								I&apos;m based in Manchester, UK
 							</p>
 							<Button name="Contact Me" isBeam containerClass="w-full mt-10" />
 						</div>
@@ -114,7 +113,7 @@ const About = () => {
 							className="w-full md:h-[126px] sm:h-[276px] h-fit object-cover sm:object-top"
 						/>
 
-						<div className="space-y-2">
+						<div className="space-y-3">
 							<p className="grid-subtext text-center">Contact me</p>
 							<div className="copy-container" onClick={handleCopy}>
 								<img
