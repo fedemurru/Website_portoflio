@@ -1,4 +1,8 @@
+import { PerspectiveCamera } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
+import HackerRoom from "../components/HackerRoom";
+import { Suspense } from "react";
+import CanvasLoader from "../components/CanvasLoader";
 
 const Hero = () => {
 	return (
@@ -12,7 +16,31 @@ const Hero = () => {
 				</p>
 			</div>
 			<div className="w-full h-full absolute inset-0">
-				<Canvas className="w-full h-full"></Canvas>
+				<Canvas className="w-full h-full">
+					<Suspense fallback={<CanvasLoader />}>
+						{/* To hide controller */}
+						<Leva hidden />
+						<PerspectiveCamera makeDefault position={[0, 0, 30]} />
+
+						<HeroCamera isMobile={isMobile}>
+							<HackerRoom
+								scale={sizes.deskScale}
+								position={sizes.deskPosition}
+								rotation={[0.1, -Math.PI, 0]}
+							/>
+						</HeroCamera>
+
+						<group>
+							<Target position={sizes.targetPosition} />
+							<ReactLogo position={sizes.reactLogoPosition} />
+							<Rings position={sizes.ringPosition} />
+							<Cube position={sizes.cubePosition} />
+						</group>
+
+						<ambientLight intensity={1} />
+						<directionalLight position={[10, 10, 10]} intensity={0.5} />
+					</Suspense>
+				</Canvas>
 			</div>
 		</section>
 	);
