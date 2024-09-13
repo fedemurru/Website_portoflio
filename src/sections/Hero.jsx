@@ -33,20 +33,22 @@ const Hero = () => {
 					Building Software Products
 				</p>
 			</div>
-			<div className="w-full h-full absolute inset-0 my-5">
-				{/* <Leva /> */}
-				<Canvas className="w-full h-full">
+
+			<div className="w-full h-full absolute inset-0">
+				<Canvas className="w-full h-full mt-10">
 					<Suspense fallback={<CanvasLoader />}>
 						{/* To hide controller */}
+						<Leva hidden />
 						<PerspectiveCamera makeDefault position={[0, 0, 30]} />
 
 						<HeroCamera isMobile={isMobile}>
 							<HackerRoom
-								scale={0.1}
-								position={[1, -12, 2]}
+								scale={sizes.deskScale}
+								position={sizes.deskPosition}
 								rotation={[0.1, -Math.PI, 0]}
 							/>
 						</HeroCamera>
+
 						<group>
 							<Target position={sizes.targetPosition} />
 							<ReactLogo position={sizes.reactLogoPosition} />
@@ -55,12 +57,13 @@ const Hero = () => {
 						</group>
 
 						<ambientLight intensity={1} />
-						<directionalLight position={[20, 40, 9]} intensity={0.9} />
+						<directionalLight position={[10, 10, 10]} intensity={0.5} />
 					</Suspense>
 				</Canvas>
 			</div>
-			<div className="absolute bottom-7 left-0 right-0 w-full z-10 c-space">
-				<a href="#about" className="w-fit">
+
+			<div className="absolute bottom-1 left-0 right-0 w-full z-10 c-space">
+				<a href="#about" className="w-fit ">
 					<Button
 						name="Let's work together"
 						isBeam
