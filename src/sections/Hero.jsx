@@ -6,14 +6,16 @@ import { Suspense } from "react";
 import CanvasLoader from "../components/CanvasLoader";
 import { Leva } from "leva";
 import { calculateSizes } from "../constants";
+import { useMediaQuery } from "react-responsive";
 
 const Hero = () => {
 	// Use media queries to determine screen size
-	// const isSmall = useMediaQuery({ maxWidth: 440 });
-	// const isMobile = useMediaQuery({ maxWidth: 768 });
-	// const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1024 });
+	const isSmall = useMediaQuery({ maxWidth: 440 });
+	const isMobile = useMediaQuery({ maxWidth: 768 });
+	const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1024 });
 
-	// const sizes = calculateSizes(isSmall, isMobile, isTablet);
+	const sizes = calculateSizes(isSmall, isMobile, isTablet);
+
 	return (
 		<section className="min-h-screen w-full flex flex-col relative" id="home">
 			<div className="w-full mx-auto flex flex-col sm:mt-36 mt-20 c-space gap-3">
@@ -21,7 +23,7 @@ const Hero = () => {
 					Hi, I am Federico <span className="waving-hand">👋</span>
 				</p>
 				<p className="hero_tag text-gray_gradient">
-					Building Software Products & Brands
+					Building Software Products
 				</p>
 			</div>
 			<div className="w-full h-full absolute inset-0">
@@ -45,7 +47,7 @@ const Hero = () => {
 						</group> */}
 
 						<ambientLight intensity={1} />
-						<directionalLight position={[10, 10, 10]} intensity={0.9} />
+						<directionalLight position={[20, 40, 9]} intensity={0.9} />
 					</Suspense>
 				</Canvas>
 			</div>
