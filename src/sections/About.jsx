@@ -67,7 +67,7 @@ const About = () => {
 									{
 										lat: 40,
 										lng: -100,
-										text: "Rjieka, Croatia",
+										text: "Manchester",
 										color: "white",
 										size: 15,
 									},
@@ -79,7 +79,7 @@ const About = () => {
 								I’m very flexible with time zone communications & locations
 							</p>
 							<p className="grid-subtext">
-								I&apos;m based in Rjieka, Croatia and open to remote work
+								I&apos;m based in Manchester, UK and open to remote work
 								worldwide.
 							</p>
 							<Button name="Contact Me" isBeam containerClass="w-full mt-10" />
