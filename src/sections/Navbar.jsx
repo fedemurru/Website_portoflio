@@ -41,13 +41,16 @@ const Navbar = () => {
 							className="w-6 h-6"
 						/>
 					</button>
+					{/* The navigation menu will be hidden on small screens and shown on medium and larger screens */}
 					<nav className="sm:flex hidden">
 						<NavItems />
 					</nav>
 				</div>
 			</div>
+			{/* We use the `nav-sidebar` class to create a dropdown menu when the hamburger menu is clicked.*/}
 			<div className={`nav-sidebar ${isOpen ? "max-h-screen" : "max-h-0"}`}>
 				<nav className="p-5">
+					{/* We use the `NavItems` component to render the navigation items.*/}
 					<NavItems onClick={closeMenu} />
 				</nav>
 			</div>
