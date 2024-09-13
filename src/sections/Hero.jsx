@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unknown-property */
 import { PerspectiveCamera } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import HackerRoom from "../components/HackerRoom";
