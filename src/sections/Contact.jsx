@@ -16,15 +16,26 @@ const Contact = () => {
 		setForm({ ...form, [name]: value });
 	};
 
-	const handleSubmit = (e) => {
+	const handleSubmit = async (e) => {
 		e.preventDefault();
 		setLoading(true);
-		// service_rurfk21
-		// template_fbz9bac
-		emailjs
-			.send(
-				import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-				import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+
+		// Controlla che i campi del form siano riempiti
+		if (!form.name || !form.email || !form.message) {
+			setLoading(false);
+			showAlert({
+				show: true,
+				text: "Please fill in all the fields",
+				type: "danger",
+			});
+			return;
+		}
+
+		try {
+			// Invio dell'email usando EmailJS
+			await emailjs.send(
+				"service_afo1s54", // Il tuo Service ID
+				"template_dbo6zu5", // Il tuo Template ID
 				{
 					from_name: form.name,
 					to_name: "Federico Mastery",
@@ -32,37 +43,36 @@ const Contact = () => {
 					to_email: "federico.murru87@gmail.com",
 					message: form.message,
 				},
-				import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
-			)
-			.then(
-				() => {
-					setLoading(false);
-					showAlert({
-						show: true,
-						text: "Thank you for your message 😃",
-						type: "success",
-					});
-
-					setTimeout(() => {
-						hideAlert(false);
-						setForm({
-							name: "",
-							email: "",
-							message: "",
-						});
-					}, [3000]);
-				},
-				(error) => {
-					setLoading(false);
-					console.error(error);
-
-					showAlert({
-						show: true,
-						text: "I didn't receive your message 😢",
-						type: "danger",
-					});
-				}
+				"JhIRu4QPz1791v4B1" // Il tuo Public Key (o User ID)
 			);
+
+			// Se l'invio ha successo
+			setLoading(false);
+			showAlert({
+				show: true,
+				text: "Thank you for your message 😃",
+				type: "success",
+			});
+
+			setTimeout(() => {
+				hideAlert(false);
+				setForm({
+					name: "",
+					email: "",
+					message: "",
+				});
+			}, 3000);
+		} catch (error) {
+			// Se l'invio fallisce
+			setLoading(false);
+			console.error("Email send error: ", error);
+
+			showAlert({
+				show: true,
+				text: "I didn't receive your message 😢",
+				type: "danger",
+			});
+		}
 	};
 
 	return (
