@@ -20,7 +20,6 @@ const Contact = () => {
 		e.preventDefault();
 		setLoading(true);
 
-		// Controlla che i campi del form siano riempiti
 		if (!form.name || !form.email || !form.message) {
 			setLoading(false);
 			showAlert({
@@ -38,7 +37,7 @@ const Contact = () => {
 				"template_dbo6zu5", // Il tuo Template ID
 				{
 					from_name: form.name,
-					to_name: "Federico Mastery",
+					to_name: "Federico",
 					from_email: form.email,
 					to_email: "federico.murru87@gmail.com",
 					message: form.message,
