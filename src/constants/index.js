@@ -288,8 +288,8 @@ export const workExperiences = [
 		pos: "Software Developer",
 		duration: "2024 - Present",
 		title:
-			"Framer serves as my go-to tool for creating interactive prototypes. I use it to bring designs to  life, allowing stakeholders to experience the user flow and interactions before development.",
-		icon: "/assets/framer.svg",
+			"As a Software Developer at Health Software Solution, I design and implement innovative health tech solutions with Next.js. My role involves developing robust applications that enhance patient care and streamline healthcare operations. I am dedicated to leveraging my skills to advance the company’s mission in improving health outcomes through technology.",
+		icon: "/assets/logo.webp",
 		animation: "victory",
 	},
 	{
@@ -298,18 +298,18 @@ export const workExperiences = [
 		pos: "Social Media Specialist",
 		duration: "2022 - Present",
 		title:
-			"Figma is my collaborative design platform of choice. I utilize it to work seamlessly with team members and clients, facilitating real-time feedback and design iterations. Its cloud-based.",
-		icon: "/assets/figma.svg",
+			"As a Social Media Specialist at Concentrix, I monitor agent performance and conduct quality reviews while promoting products and services online. I manage tasks across platforms like Salestorce, Zendesk, and Sprinklr, and engage with customers on Facebook, Twitter, and Instagram. I also stay updated on social media trends and best practices.",
+		icon: "/assets/concentrix.png",
 		animation: "clapping",
 	},
 	{
 		id: 3,
 		name: "JP Media Agency",
 		pos: "Junior Web Developer",
-		duration: "2019 - 2020",
+		duration: "2022 - 202",
 		title:
-			"JP Media Agency helps me keep my projects organized. I use it for project management, task tracking, and as a central hub for documentation, ensuring that everything from design notes to.",
-		icon: "/assets/notion.svg",
+			"At JP Media Agency, where I interned from January to June 2023, I developed websites using HTML, CSS, and JavaScript, assisted with WordPress site creation and maintenance, and managed social media accounts to boost engagement. I also utilized Google Analytics for performance analysis, handled SEO optimizations, and collaborated with cross-functional teams to enhance digital marketing efforts.",
+		icon: "/assets/jp.webp",
 		animation: "salute",
 	},
 ];
