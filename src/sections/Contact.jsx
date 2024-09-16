@@ -19,7 +19,7 @@ const Contact = () => {
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		setLoading(true);
-		//service_rurfk21
+		// service_rurfk21
 		// template_fbz9bac
 		emailjs
 			.send(
