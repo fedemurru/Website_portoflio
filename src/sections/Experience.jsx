@@ -3,6 +3,7 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 
 import Developer from "../components/Developer.jsx";
+import Developer2 from "../components/Developer2.jsx";
 import CanvasLoader from "../components/Loading.jsx";
 import { workExperiences } from "../constants/index.js";
 
@@ -28,6 +29,12 @@ const WorkExperience = () => {
 									scale={3}
 									animationName={animationName}
 								/>
+
+								{/* <Developer2
+									position-y={-3}
+									scale={3}
+									animationName={animationName}
+								/> */}
 							</Suspense>
 						</Canvas>
 					</div>
