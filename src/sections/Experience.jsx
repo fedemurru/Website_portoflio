@@ -54,7 +54,7 @@ const WorkExperience = () => {
 									<div className="flex flex-col h-full justify-start items-center py-2">
 										<div className="work-content_logo">
 											<img
-												className="w-full h-full"
+												className="w-full h-full rounded-2xl"
 												src={item.icon}
 												alt="logo"
 											/>

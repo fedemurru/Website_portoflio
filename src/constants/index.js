@@ -19,6 +19,11 @@ export const navLinks = [
 		name: "Contact",
 		href: "#contact",
 	},
+	{
+		id: 4,
+		name: "Download my Cv",
+		href: "https://docs.google.com/document/d/1x8UteEGCWZu0DFc0fxBJEVeoBWttJhDLBELOva6RfYc/edit?usp=sharing",
+	},
 ];
 
 export const clientReviews = [
