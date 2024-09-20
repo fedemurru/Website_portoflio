@@ -7,13 +7,16 @@ import Hero from "./sections/Hero";
 import Navbar from "./sections/Navbar";
 import Projects from "./sections/Projects";
 
+import Projects2 from "./sections/Projects2";
+
 const App = () => {
 	return (
 		<main className="max-w-7xl mx-auto relative">
 			<Navbar />
 			<Hero />
 			<About />
-			<Projects />
+			{/* <Projects /> */}
+			<Projects2 />
 			<Clients />
 			<WorkExperience />
 			<Contact />
