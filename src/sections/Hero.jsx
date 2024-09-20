@@ -21,8 +21,8 @@ export function Overlay() {
 					color: "white",
 				}}
 			>
-				<div className="w-full mx-auto flex flex-col mt-28 c-space gap-3 ">
-					<p className="sm:text-3xl text-xl font-medium text-white text-center font-generalsans">
+				<div className="w-full mx-auto mt-28 p-5 c-space gap-3">
+					<p className="text-3xl  font-medium c-space text-center font-generalsans">
 						Hi, I am Federico <span className="waving-hand">👋</span>
 					</p>
 					<p className="hero_tag bg-gradient-to-r from-[#c850c0] to-[#ffcc70] bg-clip-text text-transparent">
