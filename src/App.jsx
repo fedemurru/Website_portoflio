@@ -5,13 +5,13 @@ import WorkExperience from "./sections/Experience";
 import Footer from "./sections/Footer";
 import Hero from "./sections/Hero";
 import Navbar from "./sections/Navbar";
-import Projects from "./sections/Projects";
+
 import { useState, useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Points, PointMaterial } from "@react-three/drei";
 import * as random from "maath/random/dist/maath-random.esm";
 
-import Projects2 from "./sections/Projects2";
+import Projects from "./sections/Projects";
 
 function Stars(props) {
 	const ref = useRef();
@@ -52,8 +52,8 @@ const App = () => {
 			</Canvas>
 			{/* <Hero /> */}
 			<About />
-			{/* <Projects /> */}
-			<Projects2 />
+
+			<Projects />
 			<Clients />
 			<WorkExperience />
 			<Contact />
