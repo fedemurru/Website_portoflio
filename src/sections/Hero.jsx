@@ -15,6 +15,63 @@ import Button from "../components/Button.jsx";
 import Target from "../components/Target.jsx";
 import HeroCamera from "../components/HeroCamera.jsx";
 
+export function Overlay() {
+	return (
+		<div
+			style={{
+				position: "absolute",
+				top: 0,
+				left: 0,
+				pointerEvents: "none",
+				width: "100%",
+				height: "100%",
+			}}
+		>
+			<a
+				href="https://pmnd.rs/"
+				style={{ position: "absolute", bottom: 40, left: 90, fontSize: "13px" }}
+			>
+				pmnd.rs
+				<br />
+				dev collective
+			</a>
+			<div
+				style={{
+					position: "absolute",
+					top: "50%",
+					left: "50%",
+					transform: "translate3d(-50%,-50%,0)",
+					color: "white",
+				}}
+			>
+				<div className="w-full mx-auto flex flex-col mt-28 c-space gap-3  ">
+					<p className="sm:text-3xl text-xl font-medium text-white text-center font-generalsans">
+						Hi, I am Federico <span className="waving-hand">👋</span>
+					</p>
+					<p className="hero_tag text-gray_gradient">
+						Building Software Products
+					</p>
+				</div>
+			</div>
+			<div
+				style={{ position: "absolute", top: 40, left: 40, fontSize: "13px" }}
+			>
+				pretty bad —
+			</div>
+			<div
+				style={{
+					position: "absolute",
+					bottom: 40,
+					right: 40,
+					fontSize: "13px",
+				}}
+			>
+				25/02/2022
+			</div>
+		</div>
+	);
+}
+
 const Hero = () => {
 	// Use media queries to determine screen size
 	const isSmall = useMediaQuery({ maxWidth: 440 });
@@ -25,51 +82,8 @@ const Hero = () => {
 
 	return (
 		<section className="min-h-screen w-full flex flex-col relative" id="home">
-			<div className="w-full mx-auto flex flex-col mt-28 c-space gap-3  ">
-				<p className="sm:text-3xl text-xl font-medium text-white text-center font-generalsans">
-					Hi, I am Federico <span className="waving-hand">👋</span>
-				</p>
-				<p className="hero_tag text-gray_gradient">
-					Building Software Products
-				</p>
-			</div>
-
 			<div className="w-full h-full absolute inset-0">
-				<Canvas className="w-full h-full mt-5">
-					<Suspense fallback={<CanvasLoader />}>
-						{/* To hide controller */}
-						<Leva hidden />
-						<PerspectiveCamera makeDefault position={[0, 0, 30]} />
-
-						<HeroCamera isMobile={isMobile}>
-							<HackerRoom
-								scale={sizes.deskScale}
-								position={sizes.deskPosition}
-								rotation={[0.1, -Math.PI, 0]}
-							/>
-						</HeroCamera>
-
-						<group>
-							<Target position={sizes.targetPosition} />
-							<ReactLogo position={sizes.reactLogoPosition} />
-							{/* <Rings position={sizes.ringPosition} /> */}
-							<Cube position={sizes.cubePosition} />
-						</group>
-
-						<ambientLight intensity={1} />
-						<directionalLight position={[10, 10, 10]} intensity={0.5} />
-					</Suspense>
-				</Canvas>
-			</div>
-
-			<div className="absolute bottom-[10px] left-0 right-0 w-full z-10 c-space">
-				<a href="#about" className="w-fit ">
-					<Button
-						name="Let's work together"
-						isBeam
-						containerClass="sm:w-fit w-full sm:min-w-96"
-					/>
-				</a>
+				<Overlay />
 			</div>
 		</section>
 	);
