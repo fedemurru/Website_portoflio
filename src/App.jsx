@@ -6,6 +6,7 @@ import WorkExperience from "./sections/Experience";
 import Footer from "./sections/Footer";
 import Hero from "./sections/Hero";
 import Navbar from "./sections/Navbar";
+import Navbar2 from "./sections/Navbar2";
 
 import { useState, useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
@@ -47,7 +48,8 @@ function Stars(props) {
 const App = () => {
 	return (
 		<main className="max-w-7xl mx-auto relative">
-			<Navbar />
+			{/* <Navbar /> */}
+			<Navbar2 />
 			<Canvas camera={{ position: [0, 0, 1] }}>
 				<Stars />
 			</Canvas>
