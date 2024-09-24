@@ -1,4 +1,5 @@
 import About from "./sections/About";
+import About2 from "./sections/About2";
 import Clients from "./sections/Clients";
 import Contact from "./sections/Contact";
 import WorkExperience from "./sections/Experience";
@@ -51,7 +52,8 @@ const App = () => {
 				<Stars />
 			</Canvas>
 			{/* <Hero /> */}
-			<About />
+			<About2 />
+			{/* <About /> */}
 
 			<Projects />
 			<Clients />
