@@ -2,13 +2,13 @@ import { useState } from "react";
 import { navLinks } from "../constants";
 
 const NavItems = ({ onClick = () => {} }) => (
-	<ul className="nav-ul flex items-center space-x-6">
+	<ul className="nav-ul flex items-center space-x-3">
 		{navLinks.map((item, index) => (
 			<li key={item.id} className="nav-li flex items-center">
 				<span className="text-neutral-400">
 					{index + 1 < 10 ? `0${index + 1}` : index + 1}
 				</span>
-				<span className="text-neutral-400 px-2">//</span>
+				<span className="text-neutral-400 px-1">//</span>
 				<a
 					href={item.href}
 					className="nav-li_a text-white hover:text-neutral-400"
@@ -33,9 +33,12 @@ export default function Navbar() {
 				<div className="flex justify-between items-center py-5 mx-auto c-space">
 					<a
 						href="/"
-						className="text-neutral-400 font-bold text-2xl hover:text-white transition-colors relative"
+						className="text-neutral-400 font-bold text-2xl hover:text-white transition-colors relative hidden sm:block"
 					>
 						Federico
+					</a>
+					<a className="text-neutral-400 font-bold text-xl hover:text-white transition-colors relative block sm:hidden">
+						<img src="/assets/logo.png" alt="Logo" className="w-32 h-auto" />
 					</a>
 
 					<button
