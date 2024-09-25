@@ -83,7 +83,7 @@ export const myProjects = [
 	},
 	{
 		title: "Health Software Solution website",
-		desc: "Imaginify is a groundbreaking Software-as-a-Service application that empowers users to create stunning photo manipulations using AI technology. With features like AI-driven image editing, a payments system, and a credits-based model.",
+		desc: "I designed and developed the Health Software Solution website, a platform that showcases custom software services for healthcare professionals. Built using Next.js for fast, scalable architecture and Tailwind CSS for a modern, responsive design, the site is optimised for performance and user experience. ",
 		subdesc: "",
 		href: "https://health-software-solution-i8nu.vercel.app/",
 		href2: "https://github.com/fedemurru/healthSoftwareSolution",
