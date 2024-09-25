@@ -69,7 +69,6 @@ export const myProjects = [
 			"With a focus on efficiency, CarePulse integrantes complex forms and SMS notifications, by using Next.js, Appwrite, Twillio and Sentry that enhance operational workflows.",
 		href: "https://healthcare-app-pi.vercel.app/",
 		href2: "https://github.com/fedemurru/Healthcare-app",
-		texture: "/textures/project/project3.mp4",
 		spotlight: "/assets/carepulse.png",
 	},
 	{
@@ -78,7 +77,6 @@ export const myProjects = [
 		subdesc: "",
 		href: "https://vercel.com/fedemurrus-projects/health-bronze",
 		href2: "https://github.com/fedemurru/HealthBronze",
-		texture: "/textures/project/project4.mp4",
 		spotlight: "/assets/healthbronze.png",
 	},
 	{
@@ -87,7 +85,6 @@ export const myProjects = [
 		subdesc: "",
 		href: "https://health-software-solution-i8nu.vercel.app/",
 		href2: "https://github.com/fedemurru/healthSoftwareSolution",
-		texture: "/textures/project/project5.mp4",
 		spotlight: "/assets/hss.png",
 	},
 ];
