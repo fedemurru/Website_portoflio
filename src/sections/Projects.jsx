@@ -21,7 +21,7 @@ const Projects = () => {
 								className="backdrop-filter backdrop-blur-3xl w-fit rounded-lg"
 								style={project.logoStyle}
 							></div>
-							<h3 className="text-white text-xl font-semibold mt-2">
+							<h3 className="text-white text-xl mb-3 font-semibold mt-2">
 								{project.title}
 							</h3>
 							<p className="text-white">{project.desc}</p>

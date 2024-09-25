@@ -74,10 +74,10 @@ export const myProjects = [
 	},
 	{
 		title: "Health Solution System",
-		desc: "Built with Next.js and styled with Tailwind CSS, Health Solution System ensures fast load times and mobile responsiveness. Designed for healthcare professionals, this user-friendly platform helps establish a strong online presence. The website includes a sleek 5-page website featuring service descriptions, an About Us page, and a functional Contact Form for easy patient engagement.",
+		desc: "Built with Next.js and styled with Tailwind CSS, Health Solution System ensures fast load times and mobile responsiveness. Designed for healthcare professionals, this user-friendly platform helps establish a strong online presence. The 5-page website includes a homepage, an About Us page, and a functional Contact Form for easy patient engagement.",
 		subdesc: "",
-		href: "https://www.youtube.com/watch?v=PuOVqP_cjkE",
-		href2: "",
+		href: "https://vercel.com/fedemurrus-projects/health-bronze",
+		href2: "https://github.com/fedemurru/HealthBronze",
 		texture: "/textures/project/project4.mp4",
 		spotlight: "/assets/healthbronze.png",
 	},
