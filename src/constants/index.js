@@ -149,7 +149,7 @@ export const workExperiences = [
 		id: 3,
 		name: "JP Media Agency",
 		pos: "Junior Web Developer",
-		duration: "2022 - 202",
+		duration: "2023",
 		title:
 			"At JP Media Agency, where I interned from January to June 2023, I developed websites using HTML, CSS, and JavaScript, assisted with WordPress site creation and maintenance, and managed social media accounts to boost engagement. I also utilized Google Analytics for performance analysis, handled SEO optimizations, and collaborated with cross-functional teams to enhance digital marketing efforts.",
 		icon: "/assets/jp.webp",
