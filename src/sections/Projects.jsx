@@ -21,11 +21,11 @@ const Projects = () => {
 								className="backdrop-filter backdrop-blur-3xl w-fit rounded-lg"
 								style={project.logoStyle}
 							>
-								<img
+								{/* <img
 									className="w-10 h-10 shadow-sm"
 									src={project.logo}
 									alt="logo"
-								/>
+								/> */}
 							</div>
 							<h3 className="text-white text-xl font-semibold mt-2">
 								{project.title}
@@ -34,7 +34,7 @@ const Projects = () => {
 							<div className="flex gap-8">
 								<a
 									className="flex items-center gap-2 mt-4 text-white-600"
-									href={project.href}
+									href={project.href2}
 									target="_blank"
 									rel="noreferrer"
 								>

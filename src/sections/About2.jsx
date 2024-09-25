@@ -40,7 +40,7 @@ const About = () => {
 				<div className="col-span-1 xl:row-span-4">
 					<div className="grid-container transform transition duration-300 hover:scale-105">
 						<img
-							src="assets/grid2.png"
+							src="assets/grid22.webp"
 							alt="grid-2"
 							className="w-full sm:h-[276px] h-fit object-contain"
 						/>
