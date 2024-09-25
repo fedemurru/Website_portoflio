@@ -88,10 +88,10 @@ export const myProjects = [
 		desc: "An innovative healthcare platform designed to streamline essential medical processes. It simplifies patient registration, appointment scheduling, and medical record management, providing a seamless experience for both healthcare providers and patients.",
 		subdesc:
 			"With a focus on efficiency, CarePulse integrantes complex forms and SMS notifications, by using Next.js, Appwrite, Twillio and Sentry that enhance operational workflows.",
-		href: "https://www.youtube.com/watch?v=lEflo_sc82g",
-		href2: "",
+		href: "https://healthcare-app-pi.vercel.app/",
+		href2: "https://github.com/fedemurru/Healthcare-app",
 		texture: "/textures/project/project3.mp4",
-		spotlight: "/assets/spotlight3.png",
+		spotlight: "/assets/carepulse.png",
 	},
 	{
 		title: "Horizon - Online Banking Platform",

@@ -14,19 +14,13 @@ const Projects = () => {
 						<img
 							src={project.spotlight}
 							alt="spotlight"
-							className="w-full h-40 object-cover rounded-t-lg"
+							className="w-full h-44 object-cover rounded-t-lg"
 						/>
 						<div className="p-3">
 							<div
 								className="backdrop-filter backdrop-blur-3xl w-fit rounded-lg"
 								style={project.logoStyle}
-							>
-								{/* <img
-									className="w-10 h-10 shadow-sm"
-									src={project.logo}
-									alt="logo"
-								/> */}
-							</div>
+							></div>
 							<h3 className="text-white text-xl font-semibold mt-2">
 								{project.title}
 							</h3>
