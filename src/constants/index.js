@@ -73,24 +73,24 @@ export const myProjects = [
 		spotlight: "/assets/carepulse.png",
 	},
 	{
-		title: "Horizon - Online Banking Platform",
+		title: "Health Solution System",
 		desc: "Horizon is a comprehensive online banking platform that offers users a centralized finance management dashboard. It allows users to connect multiple bank accounts, monitor real-time transactions, and seamlessly transfer money to other users.",
 		subdesc:
 			"Built with Next.js 14 Appwrite, Dwolla and Plaid, Horizon ensures a smooth and secure banking experience, tailored to meet the needs of modern consumers.",
 		href: "https://www.youtube.com/watch?v=PuOVqP_cjkE",
 		href2: "",
 		texture: "/textures/project/project4.mp4",
-		spotlight: "/assets/spotlight4.png",
+		spotlight: "/assets/healthbronze.png",
 	},
 	{
-		title: "Imaginify - AI Photo Manipulation App",
+		title: "Health Software Solution website",
 		desc: "Imaginify is a groundbreaking Software-as-a-Service application that empowers users to create stunning photo manipulations using AI technology. With features like AI-driven image editing, a payments system, and a credits-based model.",
 		subdesc:
 			"Built with Next.js 14, Cloudinary AI, Clerk, and Stripe, Imaginify combines cutting-edge technology with a user-centric approach. It can be turned into a side income or even a full-fledged business.",
-		href: "https://www.youtube.com/watch?v=Ahwoks_dawU",
-		href2: "",
+		href: "https://health-software-solution-i8nu.vercel.app/",
+		href2: "https://github.com/fedemurru/healthSoftwareSolution",
 		texture: "/textures/project/project5.mp4",
-		spotlight: "/assets/spotlight5.png",
+		spotlight: "/assets/hss.png",
 	},
 ];
 

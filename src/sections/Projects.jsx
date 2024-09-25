@@ -14,7 +14,7 @@ const Projects = () => {
 						<img
 							src={project.spotlight}
 							alt="spotlight"
-							className="w-full h-44 object-cover rounded-t-lg"
+							className="w-full h-48 object-cover rounded-t-lg"
 						/>
 						<div className="p-3">
 							<div
