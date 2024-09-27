@@ -73,7 +73,7 @@ export const myProjects = [
 	},
 	{
 		title: "Health Solution System",
-		desc: "Built using Next.js 14, Supabase, and Tailwind CSS, it includes advanced features like calendar appointment scheduling, a powerful CRM for patient management, and an admin dashboard for managing bookings. With integration of authentication through Auth.js, this platform ensures a seamless experience, tailored to the unique needs of healthcare practices.",
+		desc: "Built using Next.js 14, Supabase, and Tailwind CSS, it includes advanced features like calendar appointment scheduling, a powerful CRM for patient management, and an admin dashboard for managing bookings. With integration of authentication through Auth.js, this platform is tailored to the unique needs of healthcare practices.",
 		subdesc: "",
 		href: "https://healthcare-silver.vercel.app/",
 		href2: "https://github.com/fedemurru/HealthBronze",
