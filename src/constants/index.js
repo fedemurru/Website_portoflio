@@ -22,7 +22,7 @@ export const navLinks = [
 	{
 		id: 4,
 		name: "Download my Cv",
-		href: "https://drive.google.com/file/d/1NHZd7lH0V_dFMxUrrjGGHVn0GxdAFXiJ/view?usp=sharing",
+		href: "https://drive.google.com/file/d/1TRZRXp4Lta5cYwPZa1dYljtMWYXNDDRy/view?usp=sharing",
 	},
 ];
 
