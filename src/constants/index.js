@@ -73,7 +73,7 @@ export const myProjects = [
 	},
 	{
 		title: "Health Solution System",
-		desc: "Built with Next.js and styled with Tailwind, Health Solution System ensures fast load times and mobile responsiveness. Designed for healthcare professionals, this user-friendly platform helps establish a strong online presence. The 5-page website includes a functional Contact Form for easy patient engagement.",
+		desc: "Built using Next.js 14, Supabase, and Tailwind CSS, it includes advanced features like calendar appointment scheduling, a powerful CRM for patient management, and an admin dashboard for managing bookings. With integration of authentication through Auth.js, this platform ensures a seamless experience, tailored to the unique needs of healthcare practices.",
 		subdesc: "",
 		href: "https://healthcare-silver.vercel.app/",
 		href2: "https://github.com/fedemurru/HealthBronze",
