@@ -26,7 +26,7 @@ export function Overlay() {
 						Hi, I am Federico <span className="waving-hand">👋</span>
 					</p>
 					<p className="hero_tag bg-gradient-to-r from-[#c850c0] to-[#ffcc70] bg-clip-text text-transparent">
-						Building Software Products
+						Building Software Products with Next.js and React.js
 					</p>
 				</div>
 			</div>
